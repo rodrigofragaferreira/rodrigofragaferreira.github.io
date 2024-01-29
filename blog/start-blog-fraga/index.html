@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Transformers: A Revolução na Inteligência Artificial - Rodrigo Fraga</title><meta name="description" content="Os Transformers são uma classe de modelos de aprendizado de máquina que revolucionou a inteligência artificial nos últimos anos. Transformers trouxeram uma abordagem radicalmente nova para a compreensão de texto e outras tarefas de processamento de linguagem natural (PLN). Neste texto, mergulharemos na arquitetura dos Transformers, suas principais características e como eles superaram algumas das limitações dos modelos tradicionais, abrindo caminho para uma nova era de aplicações inteligentes."><meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="/css/inter.css"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="RSS Feed of Andy Grunwald (andygrunwald.com)" href="/rss.xml"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://rodrigofraga.dev.br/blog/start-blog-fraga/"><meta property="og:url" content="https://rodrigofraga.dev.br/blog/start-blog-fraga/"><meta property="og:type" content="article"><meta property="og:title" content="Transformers: A Revolução na Inteligência Artificial - Rodrigo Fraga"><meta property="og:description" content="Os Transformers são uma classe de modelos de aprendizado de máquina que revolucionou a inteligência artificial nos últimos anos. Transformers trouxeram uma abordagem radicalmente nova para a compreensão de texto e outras tarefas de processamento de linguagem natural (PLN). Neste texto, mergulharemos na arquitetura dos Transformers, suas principais características e como eles superaram algumas das limitações dos modelos tradicionais, abrindo caminho para uma nova era de aplicações inteligentes."><meta property="og:image" content="https://rodrigofraga.dev.br/images/posts/transformers-ia/transformers-ia.png"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="rodrigofraga.dev.br"><meta property="twitter:url" content="https://rodrigofraga.dev.br/blog/start-blog-fraga/"><meta name="twitter:site" content="@andygrunwald"><meta name="twitter:title" content="Transformers: A Revolução na Inteligência Artificial - Rodrigo Fraga"><meta name="twitter:description" content="Os Transformers são uma classe de modelos de aprendizado de máquina que revolucionou a inteligência artificial nos últimos anos. Transformers trouxeram uma abordagem radicalmente nova para a compreensão de texto e outras tarefas de processamento de linguagem natural (PLN). Neste texto, mergulharemos na arquitetura dos Transformers, suas principais características e como eles superaram algumas das limitações dos modelos tradicionais, abrindo caminho para uma nova era de aplicações inteligentes."><meta name="twitter:image" content="https://rodrigofraga.dev.br/images/posts/transformers-ia/transformers-ia.png"><script src="/js/main.js"></script><link rel="stylesheet" href="/_astro/about.kY7-Cv76.css" />
+<style>article h2{margin-top:4rem;margin-bottom:2rem;font-size:2.25rem;line-height:1.125;font-weight:600;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}article h3{margin-bottom:1.5rem;font-size:1.5rem;line-height:2rem;font-weight:600;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}article h4{margin-bottom:1rem;font-size:1.25rem;line-height:2.25rem;font-weight:600;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}article hr{margin-bottom:1.5rem}article pre.astro-code{padding:1.5rem;margin-bottom:1.5rem}article .video-description{text-align:center}article .video-description p{font-size:1rem;line-height:1.875rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity));padding-top:.75rem}article p{margin-bottom:1.5rem;font-size:1.25rem;line-height:2.25rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity))}article p a:hover{text-decoration-line:underline}article p a{--tw-text-opacity: 1;color:rgb(255 112 136 / var(--tw-text-opacity))}article p img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:.5rem}article p code{--tw-text-opacity: 1;color:rgb(255 112 136 / var(--tw-text-opacity));--tw-bg-opacity: 1;background-color:rgb(242 245 250 / var(--tw-bg-opacity));--tw-border-opacity: 1;border-color:rgb(218 223 233 / var(--tw-border-opacity));padding:.25rem}article figcaption{font-size:1rem;line-height:1.875rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity));text-align:center;padding-top:.75rem}article .quote div p{font-size:1.5rem;line-height:2rem;line-height:2}article ul{list-style-type:disc;padding-left:1.25rem;padding-right:1.25rem;margin-bottom:1rem}@media (min-width: 768px){article ul{padding-left:1.25rem;padding-right:1.25rem}}article ul{font-size:1.25rem;line-height:2.25rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity))}article ul li{margin-bottom:.5rem}article ul li a:hover{text-decoration-line:underline}article ul li a{--tw-text-opacity: 1;color:rgb(255 112 136 / var(--tw-text-opacity))}article ul li ul{margin-top:.5rem}article ul li ul li{margin-left:1.5rem}article ol{list-style-type:decimal;padding-left:1.25rem;padding-right:1.25rem;margin-bottom:1rem}@media (min-width: 768px){article ol{padding-left:1.25rem;padding-right:1.25rem}}article ol{font-size:1.25rem;line-height:2.25rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity))}article ol li{margin-bottom:.5rem}article ol li a:hover{text-decoration-line:underline}article ol li a{--tw-text-opacity: 1;color:rgb(255 112 136 / var(--tw-text-opacity))}article blockquote{padding:2.5rem 2rem;margin-bottom:1.5rem;--tw-bg-opacity: 1;background-color:rgb(242 245 250 / var(--tw-bg-opacity));border-radius:.5rem;font-size:1.25rem;line-height:2.25rem;--tw-text-opacity: 1;color:rgb(131 142 164 / var(--tw-text-opacity))}article blockquote p{font-size:1.25rem;line-height:2.25rem;line-height:2}
+</style></head> <body class="antialiased bg-body text-body font-body"> <div> <section class="relative py-8"> <div> <nav class="flex justify-between items-center py-8 px-4 xl:px-10"> <a class="text-lg font-semibold" href="/"> <span class="text-lg font-semibold"> <span class="text-red-400">&raquo;</span> Rodrigo Fraga
+</span> </a> <div class="lg:hidden"> <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded"> <svg class="block h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <title>Mobile menu</title> <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path> </svg> </button> </div> <ul class="hidden lg:flex lg:ml-auto lg:mr-12 lg:items-center lg:w-auto lg:space-x-12"> <li> <a class="text-sm font-medium" href="/blog/" title="Blog of Andy Grunwald">
+✍️ Blog
+</a> </li> <li> <a class="text-sm font-medium" href="/about/" title="About Andy Grunwald">
+👨‍🔬 Sobre
+</a> </li> <!-- 
+					TODO Activate pages
+				<li>
+					<a class="text-sm font-medium" href="#">Projects</a>
+				</li>
+				<li>
+					<a class="text-sm font-medium" href="#">Contact</a>
+				</li>
+				--> </ul> <!-- 
+				TODO Activate pages
+			<div class="hidden lg:block">
+				<a class="inline-block py-3 px-8 text-sm leading-normal font-medium bg-red-50 hover:bg-red-100 text-red-500 rounded transition duration-200" href="#">
+					Work with me
+				</a>
+			</div>
+			--> </nav> </div> <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"> <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div> <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto"> <div class="flex items-center mb-8"> <a class="mr-auto text-lg font-semibold leading-none" href="/"> <span class="text-lg font-semibold"> <span class="text-red-400">&raquo;</span> Rodrigo Fraga
+</span> </a> <button class="navbar-close"> <svg class="h-6 w-6 text-gray-500 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div> <ul> <li class="mb-1"> <a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="/blog/" title="Blog of Andy Grunwald">
+✍️ Blog
+</a> </li> <li class="mb-1"> <a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="/about/" title="About Andy Grunwald">
+👨‍🔬 Sobre
+</a> </li> <!-- 
+						TODO Activate pages
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="#">Projects</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="#">Contact</a>
+					</li>
+					--> </ul> </div> <div class="mt-auto"> <!--
+				<div class="pt-6">
+					<a class="block py-3 text-center text-sm leading-normal bg-red-50 hover:bg-red-100 text-red-300 font-semibold rounded transition duration-200" href="#">
+						Work with me 2
+					</a>
+				</div>
+				--> <p class="mt-6 mb-4 text-sm text-center text-gray-500"> <span>© 2024 All rights reserved.</span> </p> </div> </nav> </div> </section> <section class="relative py-20"> <div class="container px-4 mx-auto"> <div class="max-w-2xl mx-auto mb-10 text-center"> <h1 class="mb-6 text-4xl font-semibold font-heading">Transformers: A Revolução na Inteligência Artificial</h1> <div class="items-center justify-center"> <div class="text-center mb-4"> <p class="text-gray-500"> <time class="date" datetime="Mon Jan 01 2024 21:00:00 GMT-0300 (Horário Padrão de Brasília)">segunda-feira, 1 de janeiro de 2024</time> </p> </div> <div class="text-center"> <span class="inline-block mb-3 mx-2 text-xs px-2 py-1 bg-blue-50 rounded uppercase text-blue-400 font-semibold"> BLOG </span> </div> </div> </div> <div class="h-112 mb-10"> <img class="w-full h-full object-cover object-top rounded-lg" src="/images/posts/transformers-ia/transformers-ia.png" alt=""> </div> <div class="max-w-2xl mx-auto"> <article>  <h2 id="introdução">Introdução:</h2>
+<p>Os Transformers são uma classe de modelos de aprendizado de máquina que revolucionou a inteligência artificial nos últimos anos.
+Transformers trouxeram uma abordagem radicalmente nova para a compreensão de texto e outras tarefas de processamento de linguagem natural (PLN).
+Neste texto, mergulharemos na arquitetura dos Transformers, suas principais características e como eles superaram algumas das limitações dos modelos tradicionais,
+abrindo caminho para uma nova era de aplicações inteligentes.</p>
+<h3 id="a-motivação-para-os-transformers">A Motivação para os Transformers:</h3>
+<p>Antes do surgimento dos Transformers, muitos modelos de PLN baseavam-se em arquiteturas como redes neurais recorrentes (RNNs) e
+redes neurais convolucionais (CNNs). Essas abordagens tiveram sucesso em algumas tarefas, mas enfrentaram desafios quando se
+tratava de lidar com sequências longas, como textos completos. Além disso, essas arquiteturas eram computacionalmente intensivas e
+tinham dificuldades em aprender relações de longo alcance em sequências.</p>
+<p>Os pesquisadores perceberam que as RNNs e CNNs dependiam fortemente de uma ordem fixa de palavras na entrada, tornando-as ineficientes
+para capturar conexões significativas entre palavras distantes. Os Transformers abordaram essa limitação com um mecanismo inovador de
+atenção, permitindo que os modelos aprendessem a importância relativa das palavras em uma sequência, sem depender de sua posição fixa.</p>
+<h3 id="o-conceito-de-atenção">O Conceito de Atenção:</h3>
+<p>O coração dos Transformers é o mecanismo de atenção. A atenção é uma técnica que permite que o modelo se concentre em partes
+específicas de uma sequência ao calcular uma média ponderada das representações de todas as palavras na sequência.
+A importância de cada palavra é determinada por um valor de atenção, que é aprendido durante o treinamento.</p>
+<p>Para entender como a atenção funciona, imagine que estamos traduzindo uma frase do inglês para o francês.
+Em vez de ler a frase toda de uma vez e traduzi-la automaticamente, a atenção permite que o modelo selecione as palavras-chave em inglês relevantes para cada palavra em francês.
+Dessa forma, o modelo pode entender melhor as nuances de cada idioma e produzir uma tradução mais precisa.</p>
+<h3 id="arquitetura-dos-transformers">Arquitetura dos Transformers:</h3>
+<p>A arquitetura dos Transformers é dividida em dois componentes principais: o codificador (encoder) e o decodificador (decoder).
+Essa estrutura foi inicialmente projetada para tarefas de tradução automática, mas logo se mostrou eficaz em muitas outras tarefas de PLN,
+como resumo de texto, geração de texto e classificação de sentimentos.</p>
+<p>O codificador é responsável por aprender representações de alta qualidade da sequência de entrada. Cada palavra ou token na sequência
+é representado por um vetor de números (embedding). Em seguida, várias camadas de codificação, chamadas de blocos de atenção, são empilhadas.
+Cada bloco de atenção possui várias cabeças de atenção que aprendem padrões diferentes da sequência. Essa abordagem permite que o modelo
+capture informações contextuais de maneira mais eficiente e com menos parâmetros do que outras arquiteturas, como as RNNs.</p>
+<p>O decodificador é usado em tarefas de geração de texto, onde o modelo produz uma sequência de saída. Ele também utiliza blocos de atenção,
+mas com algumas modificações para garantir que a geração seja feita de forma autoregressiva, ou seja, uma palavra de cada vez,
+dependendo das palavras geradas anteriormente.</p>
+<h3 id="aplicações-dos-transformers">Aplicações dos Transformers:</h3>
+<p>Os Transformers revolucionaram as tarefas de PLN e são amplamente utilizados em diversas aplicações.
+Eles impulsionaram o sucesso de assistentes virtuais, como a Alexa da Amazon e a Siri da Apple, tornando a
+interação homem-máquina mais natural e eficiente. Também são amplamente usados em motores de busca, melhorando
+os resultados de pesquisa e a compreensão das consultas dos usuários.</p>
+<p>Além disso, os Transformers tiveram um impacto significativo na tradução automática, tornando as traduções
+mais precisas e fluentes. Em áreas como análise de sentimentos, os Transformers mostraram desempenho superior,
+capturando melhor as nuances do sentimento humano em textos.</p>
+<h3 id="desafios-e-futuro-dos-transformers">Desafios e Futuro dos Transformers:</h3>
+<p>Apesar de seu sucesso, os Transformers ainda enfrentam desafios significativos. A principal questão é o
+alto consumo de recursos computacionais, o que torna a utilização de modelos de grande escala caro e inviável
+para muitas organizações. Pesquisadores estão trabalhando em técnicas de compressão e otimização para tornar os Transformers mais eficientes.</p>
+<p>Outra área de pesquisa promissora é a interpretabilidade dos modelos. Como os Transformers são capazes de
+aprender padrões complexos e representações abstratas, entender as decisões que eles tomam em tarefas
+específicas pode ser desafiador. A interpretabilidade é uma preocupação crucial em aplicações de IA em
+setores como saúde e justiça, onde as decisões precisam ser transparentes e justificáveis.</p>
+<h3 id="conclusão">Conclusão:</h3>
+<p>Os Transformers são uma das inovações mais significativas na inteligência artificial moderna.
+Sua arquitetura baseada em atenção trouxe uma abordagem mais flexível e eficiente para o processamento de
+linguagem natural, permitindo que modelos aprendam relações de longo alcance e representações contextuais
+em sequências de texto. Essa tecnologia tem sido amplamente adotada em várias aplicações, tornando-se um pilar da IA contemporânea.</p>
+<p>No entanto, ainda há muito a ser explorado e aprimorado nos Transformers. A comunidade de pesquisa continua
+trabalhando arduamente para tornar esses modelos mais eficientes, interpretáveis e responsáveis.
+À medida que avançamos para o futuro, a expectativa é que os Transformers continuem a moldar a IA e
+impulsionar inovações em uma ampla gama de setores, tornando-se uma ferramenta cada vez mais poderosa
+para compreender e interagir com o mundo ao nosso redor.</p>  </article> <hr> </div> </div> </section> <footer class="py-20"> <div class="px-4 xl:px-10"> <div class="pb-6 lg:pb-10 border-b border-gray-100"> <div class="flex flex-wrap items-start justify-between"> <div class="w-full md:w-1/3"> <!-- TODO The logo is not item-center (in line with the nav) --> <a class="inline-block text-gray-900 text-lg font-semibold" href="/"> <span class="text-lg font-semibold"> <span class="text-red-400">&raquo;</span> Rodrigo Fraga
+</span> </a> </div> <div class="w-auto"> <div class="flex flex-wrap md:items-center md:justify-end mt-4 md:mt-0"> <ul class="w-full lg:w-auto inline-flex flex-wrap flex-col md:flex-row  mb-4 lg:mb-0 md:mr-6 lg:mr-12"> <li class="mr-12 mb-2 md:mb-0"> <a class="text-sm font-medium" href="/blog/" title="Blog of Andy Grunwald">
+✍️ Blog
+</a> </li> <li class="mr-12 mb-2 md:mb-0"> <a class="text-sm font-medium" href="/about/" title="About Andy Grunwald">
+👨‍🔬 Sobre
+</a> </li> <!--
+                  TODO Activate pages
+                  
+                <li class="mr-12 mb-2 md:mb-0"><a class="text-sm font-medium" href="#">Projects</a></li>
+                <li class="mb-2 md:mb-0"><a class="text-sm font-medium" href="#">Contact</a></li>
+                --> </ul> <!--
+            TODO Activate pages
+            <a class="inline-block mr-auto lg:mr-0 py-4 px-8 text-sm text-red-500 font-medium leading-normal bg-red-50 hover:bg-red-100 rounded transition duration-200" href="#">
+                Work with me
+            </a>
+            --> </div> </div> </div> </div> <div> <div class="flex flex-wrap justify-between items-center"> <p class="text-sm text-gray-500 mt-8">
+All rights reserved © Rodrigo Fraga 2024 </p> <div class="flex order-first sm:order-last mt-8"> <a class="flex justify-center items-center w-10 h-10 mr-4 bg-gray-50 rounded-full" href="https://github.com/rodrigofragaferreira" title="Rodrigo Fraga at GitHub"> <svg class="text-gray-500" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="#838EA4"> <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path> </g> </svg> </a> <a class="flex justify-center items-center w-10 h-10 mr-4 bg-gray-50 rounded-full" href="https://www.linkedin.com/in/rodrigofragaferreira/" title="Rodrigo Fraga at LinkedIn"> <svg class="text-gray-500" width="20" height="20" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.8 0H1.2C0.54 0 0 0.54 0 1.2V10.8C0 11.46 0.54 12 1.2 12H10.8C11.46 12 12 11.46 12 10.8V1.2C12 0.54 11.46 0 10.8 0ZM3.6 10.2H1.8V4.8H3.6V10.2ZM2.7 3.78C2.1 3.78 1.62 3.3 1.62 2.7C1.62 2.1 2.1 1.62 2.7 1.62C3.3 1.62 3.78 2.1 3.78 2.7C3.78 3.3 3.3 3.78 2.7 3.78ZM10.2 10.2H8.4V7.02C8.4 6.54002 7.98 6.12 7.5 6.12C7.02 6.12 6.6 6.54002 6.6 7.02V10.2H4.8V4.8H6.6V5.52C6.9 5.04 7.56 4.68 8.1 4.68C9.24 4.68 10.2 5.64 10.2 6.78V10.2Z" fill="currentColor"></path> </svg> </a> <a class="flex justify-center items-center w-10 h-10 mr-4 bg-gray-50 rounded-full" href="mailto:rodrigofragaferreira@gmail.com" title="E-mail para Rodrigo Fraga"> <svg class="text-gray-500" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="#838EA4"> <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"></path> </g> </svg> </a> <a class="flex justify-center items-center w-10 h-10 bg-gray-50 rounded-full" href="/rss.xml" title="RSS Feed of rodrigofraga.dev.br"> <svg class="text-gray-500" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="#838EA4"> <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"></path> </g> </svg> </a> </div> </div> </div> </div> </footer> </div> </body></html>
